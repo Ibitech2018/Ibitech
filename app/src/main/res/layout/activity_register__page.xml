@@ -1,10 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ibitech.s216234670.ibitech.Register_Page">
+    android:alwaysDrawnWithCache="false"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light"
+        >
+        <TextView
+            android:id="@+id/Head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="REGISTER "
+            android:textColor="#f4f5f5"
+            android:textSize="25dp"
+            android:textStyle="italic"></TextView>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/Reg_ID"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:hint="Identification Number"
+        android:textColorHint="#858789"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Reg_contactNumber"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:textColorHint="#858789"
+        />
+    <EditText
+        android:id="@+id/Reg_Email"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:textColorHint="#858789"
+        />
+
+    <EditText
+        android:id="@+id/Reg_Password"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#858789"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/Reg_Confirm_Password"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textColorHint="#858789"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="327dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:background="#233ED1"
+        android:text="Button" />
+    <TextView
+        android:id="@+id/NewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="  Already a User?     Login"
+        android:textColor="grey"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:text="CheckBox" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NewUser"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-1dp"
+        android:text="         By signing in you agree to our
+         privacy policy and terms and conditions "
+        android:textColor="grey" />
 
 
 </LinearLayout>
+
+
+
+
+
+
+
